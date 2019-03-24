@@ -16,6 +16,12 @@ Route::get('create', 'ArticleController@create');
 Route::post('create', 'ArticleController@store');
 Route::get('edit/{id}', 'ArticleController@edit');
 Route::post('update', 'ArticleController@update');
+Route::get('delete/{id}', 'ArticleController@show');
+Route::post('delete', 'ArticleController@delete');
+
+Route::get('sample', 'SampleController@index');
+
+Route::get('about', 'PagesController@about');
 
 
 // Route::get('/', function () {
